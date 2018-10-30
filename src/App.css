@@ -1,32 +1,110 @@
-.App {
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+
+body {
+  font-family: 'Playfair Display', serif;
+  background-color: #111426;
+}
+
+.topheader {
+  background-color: #000;
+}
+.navbar {
+  background-color: #000;
+}
+.navbar-item {
+  color: #fff;
+  font-size: 220%;
+}
+.results--section {
+  padding: 20px 0px;
+  margin-top: 40px;
+}
+h1 {
+  text-align: center;
+  font-size: 30px;
+  color: #fff;
+}
+
+.today--section {
+  margin-bottom: 40px;
+  padding: 0 50px;
+}
+.today--section h2 {
+  font-size: 20px;
+  color: #fff;
+}
+.today--section__box {
+  background-color: white;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+.btc--section {
+  text-align: center;
+  border-right: 1px solid #DAE1E9;
+}
+.btc--section h5 {
+  font-size: 30px;
+}
+.eth--section {
+  text-align: center;
+  border-right: 1px solid #DAE1E9;
+}
+.eth--section h5 {
+  font-size: 30px;
+}
+.ltc--section {
   text-align: center;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.ltc--section h5 {
+  font-size: 30px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 480px) {
+  .eth--section {
+      border-right: none;
   }
-  to {
-    transform: rotate(360deg);
+  .btc--section {
+      border-right: none;
+  }
+  .today--section {
+      margin-top:  50px;
+  }
+}
+
+.history--section {
+  margin-bottom: 40px;
+  padding: 50px;
+}
+.history--section h2 {
+  font-size: 20px;
+  color: #fff;
+}
+.history--section__box {
+  background-color: white;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+.history--section__box__inner {
+  display: block;
+  padding: 20px;
+  width: 100%;
+  border-bottom: 1px dashed #7D95B6;
+}
+.history--section__box__inner:nth-last-child(1) {
+  border-bottom: none;
+}
+.history--section__box__inner h4 {
+  color: #0667D0;
+  margin-bottom: 10px;
+}
+.history--section__box__inner p {
+  text-align: center;
+}
+@media (max-width: 480px) {
+  .history--section__box__inner h4 {
+      text-align: center;
   }
 }
