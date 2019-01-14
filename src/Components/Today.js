@@ -17,7 +17,7 @@ componentWillMount() {
         this.setState({ ethprice: response.data.ETH.USD });
         this.setState({ ltcprice: response.data.LTC.USD });
         this.setState({ xrpprice: response.data.XRP.USD });
-        console.log(response);
+        console.log(response.data);
     })
     .catch(error => {
         console.log(error)

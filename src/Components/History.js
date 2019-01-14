@@ -5,11 +5,11 @@ import axios from 'axios';
 class History extends Component {
 
     state = {
-        todayprice: {},
-        yesterdayprice: {},
-        twodaysprice: {},
-        threedaysprice: {},
-        fourdaysprice: {}
+        todayprice: [],
+        yesterdayprice: [],
+        twodaysprice: [],
+        threedaysprice:[],
+        fourdaysprice: [],
     }
 
     componentWillMount () {
